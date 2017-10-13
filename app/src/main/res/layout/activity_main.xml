@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- Left side pane. (Master) -->
+    <fragment
+        android:id="@+id/leftpane"
+        android:name="com.example.vibrant1.slidepanedemo.slideFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginEnd="60dp"
+        android:layout_marginRight="60dp"
+        tools:layout="@layout/fragment_slide" />
+
+    <!-- Right side page. (Slave) -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="5dp"
+            android:theme="@style/AppTheme" />
+
+        <fragment
+            android:id="@+id/rightpane"
+            android:name="com.example.vibrant1.slidepanedemo.mainFrag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            tools:layout="@layout/fragment_main" />
+    </LinearLayout>
+
+</android.support.v4.widget.SlidingPaneLayout>
