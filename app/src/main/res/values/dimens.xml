@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="slideTextSize">14dp</dimen>
+    <dimen name="slideTextSize">15dp</dimen>
     <dimen name="imageHeight">60dp</dimen>
-    <dimen name="frameHeight">350dp</dimen>
+    <dimen name="frameHeight">320dp</dimen>
     <dimen name="spinnerHeight">40dp</dimen>
 
 </resources>

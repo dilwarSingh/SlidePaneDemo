@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements BookmarkListener {
+public class homeActivity extends AppCompatActivity implements BookmarkListener {
 
 
     SlidingPaneLayout pane;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements BookmarkListener 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "nav clicked", Toast.LENGTH_SHORT).show();
+                Toast.makeText(homeActivity.this, "nav clicked", Toast.LENGTH_SHORT).show();
                 if (pane.isOpen()) {
                     pane.closePane();
                 } else {
